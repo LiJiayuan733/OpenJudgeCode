@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01
-BuildDirectory: /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build
+SourceDirectory: /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode
+BuildDirectory: /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -26,7 +26,7 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/Applications/CMake.app/Contents/bin/cmake" "/Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01"
+ConfigureCommand: "/Applications/CMake.app/Contents/bin/cmake" "/Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode"
 MakeCommand: /Applications/CMake.app/Contents/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
 DefaultCTestConfigurationType: Release
 
@@ -44,7 +44,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/local/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -57,9 +57,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /usr/local/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/clang++

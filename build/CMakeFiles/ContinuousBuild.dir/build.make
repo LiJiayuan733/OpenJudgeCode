@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01
+CMAKE_SOURCE_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build
+CMAKE_BINARY_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build
 
 # Utility rule file for ContinuousBuild.
 
@@ -82,6 +82,6 @@ CMakeFiles/ContinuousBuild.dir/clean:
 .PHONY : CMakeFiles/ContinuousBuild.dir/clean
 
 CMakeFiles/ContinuousBuild.dir/depend:
-	cd /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01 /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01 /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build/CMakeFiles/ContinuousBuild.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build/CMakeFiles/ContinuousBuild.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ContinuousBuild.dir/depend
 

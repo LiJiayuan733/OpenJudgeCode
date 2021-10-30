@@ -1,11 +1,13 @@
 {
 	"version": "2.0.0",
 	"tasks": [
+
 		{
 			"type": "shell",
 			"label": "build",
-			"command": "g++ ./main.cpp -o main",
-			"group": "build"
+			"command": "cd ./build;cmake ../;make;mv ./NOI ../main",
+			"group": "build",
+			"dependsOn":"TCmake"
 		},
 		{
 			"type": "shell",

@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01
+CMAKE_SOURCE_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build
+CMAKE_BINARY_DIR = /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build/CPackSourceConfig.cmake
+	/Applications/CMake.app/Contents/bin/cpack --config ./CPackSourceConfig.cmake /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -117,9 +117,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build/CMakeFiles /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build/CMakeFiles /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/STUC01/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/pingguo/Desktop/Pomo/Code/CPP/NIIO/OpenJudgeCode/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -511,24 +511,24 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named msk
+# Target rules for targets named NOI
 
 # Build rule for target.
-msk: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 msk
-.PHONY : msk
+NOI: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 NOI
+.PHONY : NOI
 
 # fast build rule for target.
-msk/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/msk.dir/build.make CMakeFiles/msk.dir/build
-.PHONY : msk/fast
+NOI/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NOI.dir/build.make CMakeFiles/NOI.dir/build
+.PHONY : NOI/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/msk.dir/build.make CMakeFiles/msk.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NOI.dir/build.make CMakeFiles/NOI.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -536,7 +536,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/msk.dir/build.make CMakeFiles/msk.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NOI.dir/build.make CMakeFiles/NOI.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -544,7 +544,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/msk.dir/build.make CMakeFiles/msk.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NOI.dir/build.make CMakeFiles/NOI.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -586,7 +586,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... msk"
+	@echo "... NOI"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
