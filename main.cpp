@@ -1,8 +1,15 @@
 #include <iostream>
-#include <map>
-#include <math.h>
-
+#include <fstream>
 using namespace std;
 int main(){
-    int p[]={2,2,3,6,5,4,3,2};
+    ifstream inFile;
+    inFile.open("./test.in",ios::in);
+    if(!inFile.is_open()){
+        cout << "文件打开失败" << endl;
+        return;
+    }
+    string buf;
+    while(getline(inFile,buf)){
+        cout << buf << endl;
+    }
 }

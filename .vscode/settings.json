@@ -8,6 +8,7 @@
         "vector": "cpp",
         "map": "cpp",
         "memory": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "istream": "cpp"
     }
 }
